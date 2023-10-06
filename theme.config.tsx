@@ -1,17 +1,15 @@
 import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
+import  TumIcon  from './components/icons/tum'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <strong>Aerospace docs 🚀✈️</strong>,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: 'https://github.com/BenPriborsky/aerospace-docs',
   },
-  chat: {
-    link: 'https://discord.com',
-  },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: 'https://github.com/BenPriborsky/aerospace-docs/tree/main',
   footer: {
-    text: 'Nextra Docs Template',
+    text: <div style={{display: "inline-block"}}><TumIcon size={25} /><strong>Areospace</strong></div>,
   },
 }
 
