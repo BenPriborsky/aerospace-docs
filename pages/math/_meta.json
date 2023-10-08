@@ -1,4 +1,6 @@
 {
     "index": "Introduction",
-    "stochastics": "Stochastics"
+    "stochastics": "Stochastics",
+    "statements" : "Statements",
+    "sets": "Sets"
 }
