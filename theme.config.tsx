@@ -11,12 +11,11 @@ const config: DocsThemeConfig = {
   footer: {
     text: <div style={{ display: "inline-block" }}><TumIcon size={25} /><strong>Areospace</strong></div>,
   },
-}
-
-export default {
-  config, useNextSeoProps() {
+  useNextSeoProps() {
     return {
       titleTemplate: '%s - Aerospace'
     }
   }
 }
+
+export default config
