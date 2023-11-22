@@ -2,5 +2,6 @@
     "index": "Introduction",
     "stochastics": "Stochastics",
     "statements" : "Statements",
-    "sets": "Sets"
+    "sets": "Sets",
+    "linearSystems": "Linear systems of equations"
 }
