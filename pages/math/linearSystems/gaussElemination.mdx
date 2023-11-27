@@ -1,0 +1,103 @@
+# Gaussian Elimination in Matrix Form
+
+Gaussian Elimination is a systematic method for solving systems of linear equations by transforming the augmented matrix representing the system into its row-echelon form. The process involves elementary row operations, including swapping rows, multiplying a row by a constant, and adding or subtracting rows.
+
+## Steps:
+
+1. **Start with an Augmented Matrix:**
+   Represent the system of linear equations in an augmented matrix [A|B], where A is the coefficient matrix and B is the column of constants.
+
+2. **Row Reduction:**
+   Apply row operations to transform the matrix into row-echelon form, where leading entries (pivot elements) are along the main diagonal, and entries below and above pivots are zeros.
+
+3. **Analyze Rows:**
+   - If a row is of the form `0x + 0y + 0z = k` (where k is not zero), the system is inconsistent.
+   - Rows of the form `1x + 0y + 0z = k` indicate one solution.
+   - Rows with all zero entries imply infinitely many solutions.
+
+4. **Back Substitution (Optional):**
+   If the matrix is square and in row-echelon form, perform back substitution to find the values of variables.
+
+Gaussian Elimination simplifies solving linear systems, providing insight into the existence and nature of solutions.
+
+---
+
+# Gaussian Elimination Example
+
+Consider the system of equations:
+
+\[
+\begin{align*}
+2x + y - z &= 8 \\
+-3x - y + 2z &= -11 \\
+-2x + y + 2z &= -3
+\end{align*}
+\]
+
+Representing this system as an augmented matrix [A|B]:
+
+\[
+\left[\begin{array}{ccc|c}
+2 & 1 & -1 & 8 \\
+-3 & -1 & 2 & -11 \\
+-2 & 1 & 2 & -3
+\end{array}\right]
+\]
+
+## Row Reduction:
+
+1. **Row 2 = Row 2 + (3)Row 1**
+
+\[
+\left[\begin{array}{ccc|c}
+2 & 1 & -1 & 8 \\
+0 & 2 & -1 & 5 \\
+-2 & 1 & 2 & -3
+\end{array}\right]
+\]
+
+2. **Row 3 = Row 3 + Row 1**
+
+\[
+\left[\begin{array}{ccc|c}
+2 & 1 & -1 & 8 \\
+0 & 2 & -1 & 5 \\
+0 & 2 & 1 & 5
+\end{array}\right]
+\]
+
+3. **Row 3 = Row 3 - Row 2**
+
+\[
+\left[\begin{array}{ccc|c}
+2 & 1 & -1 & 8 \\
+0 & 2 & -1 & 5 \\
+0 & 0 & 2 & 0
+\end{array}\right]
+\]
+
+## Back Substitution:
+
+Solving for variables gives \(z = 0\), \(y = 2\), and \(x = 3\). Therefore, the system has a unique solution.
+
+Gaussian Elimination simplifies solving linear systems, providing a clear path to solutions.
+
+## Numbers of solutions
+
+### Compute the rank:
+
+the rank of a matrix is the deminsion of the vector space generated or spanned by its columns. 
+The rank is therefore the number of linear independent columns of our matrix.
+This, in turn, is identical to the dimension of the vector space spanned by its rows.
+
+$rank(A):= dim(img(A))$
+
+TO compute the rank of a matrix use gauss elemination and count the non-zero rows of the transformed matrix.
+
+A system of linear equations is only solvable if $rank(A) = rank(A|B)$
+
+1. **unique solution**:
+   $rank(A) = n$  
+
+2. **infinitely solutions**: 
+   $rank(A) \neq n$
