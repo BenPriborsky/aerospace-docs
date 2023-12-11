@@ -26,55 +26,53 @@ Gaussian Elimination simplifies solving linear systems, providing insight into t
 
 Consider the system of equations:
 
-\[
-\begin{align*}
-2x + y - z &= 8 \\
--3x - y + 2z &= -11 \\
--2x + y + 2z &= -3
-\end{align*}
-\]
+
+$2x + y - z = 8$   
+$-3x - y + 2z = -11$   
+$-2x + y + 2z = -3$  
+
 
 Representing this system as an augmented matrix [A|B]:
 
-\[
+$
 \left[\begin{array}{ccc|c}
 2 & 1 & -1 & 8 \\
 -3 & -1 & 2 & -11 \\
 -2 & 1 & 2 & -3
 \end{array}\right]
-\]
+$
 
 ## Row Reduction:
 
 1. **Row 2 = Row 2 + (3)Row 1**
 
-\[
+$
 \left[\begin{array}{ccc|c}
 2 & 1 & -1 & 8 \\
 0 & 2 & -1 & 5 \\
 -2 & 1 & 2 & -3
 \end{array}\right]
-\]
+$
 
 2. **Row 3 = Row 3 + Row 1**
 
-\[
+$
 \left[\begin{array}{ccc|c}
 2 & 1 & -1 & 8 \\
 0 & 2 & -1 & 5 \\
 0 & 2 & 1 & 5
 \end{array}\right]
-\]
+$
 
 3. **Row 3 = Row 3 - Row 2**
 
-\[
+$
 \left[\begin{array}{ccc|c}
 2 & 1 & -1 & 8 \\
 0 & 2 & -1 & 5 \\
 0 & 0 & 2 & 0
 \end{array}\right]
-\]
+$
 
 ## Back Substitution:
 
