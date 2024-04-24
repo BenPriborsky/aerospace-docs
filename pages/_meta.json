@@ -10,5 +10,9 @@
   "me": {
     "title": "ME",
     "type": "page"
+  },
+  "thermo1": {
+    "title": "Thermo 1",
+    "type": "page"
   }
 }
