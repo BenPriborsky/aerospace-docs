@@ -14,5 +14,9 @@
   "thermo1": {
     "title": "Thermo 1",
     "type": "page"
+  },
+  "math2": {
+    "title" : "Math 2",
+    "type" : "page"
   }
 }
