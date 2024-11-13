@@ -1,0 +1,33 @@
+# Types of ODE
+linear: only linear y terms  
+homogeneous: $y' + p(x)y = 0$ no term without y  
+autonomous: no x in equation  
+
+
+
+# Existence and uniqueness: 
+If $f \in C(D)$ and $(x_0, y_0) \in D$ then at least ONE solution.  
+If $\frac{\delta f(y)}{\delta y} \in C(D)$ $\implies$ unique solution.
+
+# Linear 1’st order ODE
+form: $y'(x) + p(x)y(x) = f(x)$  
+$f(x) = 0$ $\implies$ homogeneous ODE $\implies$ solve by speration of variables  
+$f(x) \neq 0$ $\implies$ inhomogeneous 
+general solution: $e^{-P(x)} \cdot (\int e^{P(x)} \cdot f(x) dx + C)$
+
+get general solution using superposition:  
+$y = y_{homo} + y_{p}$  
+ansatz: $y_p(x) = c(x) \cdot y_{homo}$
+Insert ansatz into the inhomogeneous ODE $\implies$  
+$c(x) = \int e^{P(x)} \cdot f(x) dx +C$
+
+# Bernoulli DE(non linear)
+form: $y'(x) +p(x)y(x) = f(x) \cdot y^{\alpha}$
+ansatz for $\alpha \neq {1;0}$: $u(x) = y^{1- \alpha}(x) \implies $solve this homogeneous ODE
+
+# Order reduction 
+form: Second order autonomous ODE  
+ansatz: $v(y) = \frac{dy}{dx} = y' \implies y'' = \frac{dy'}{dx} = v' \cdot v$^
+
+# Second-order linear DE
+form: $y''(x) + p(x)y'(x) + q(x)y(x) = r(x)$

@@ -18,5 +18,9 @@
   "math2": {
     "title" : "Math 2",
     "type" : "page"
+  },
+  "ode": {
+    "title": "ODE",
+    "type": "page"
   }
 }
